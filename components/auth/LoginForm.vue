@@ -1,18 +1,25 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref,defineProps } from 'vue';
+defineProps({
+  userType: {
+    type: String,
+    required: true,
+    default: 'User', 
+  },
+});
 const checkbox = ref(false);
 </script>
 
 <template>
     <div class="d-flex align-center text-center mb-6">
         <div class="text-h6 w-100 px-5 font-weight-regular auth-divider position-relative">
-            <span class="bg-surface px-5 py-3 position-relative text-subtitle-1 text-grey100">Your Social Campaigns</span>
+            <span class="bg-surface px-5 py-3 position-relative text-subtitle-1 text-grey100">Login {{ userType }}</span>
         </div>
     </div>
     <div>
         <v-row class="mb-3">
             <v-col cols="12">
-                <v-label class="font-weight-medium mb-1">Username</v-label>
+                <v-label class="font-weight-medium mb-1">Email</v-label>
                 <v-text-field variant="outlined" class="pwdInput" hide-details color="primary"></v-text-field>
             </v-col>
             <v-col cols="12">
@@ -25,11 +32,6 @@ const checkbox = ref(false);
                     <v-checkbox hide-details color="primary">
                         <template v-slot:label class="">Remeber this Device</template>
                     </v-checkbox>
-                    <div class="ml-sm-auto">
-                        <RouterLink to=""
-                            class="text-primary text-decoration-none text-body-1 opacity-1 font-weight-medium">
-                            Forgot Password ?</RouterLink>
-                    </div>
                 </div>
             </v-col>
             <v-col cols="12">

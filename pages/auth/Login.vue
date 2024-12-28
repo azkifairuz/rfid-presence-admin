@@ -16,7 +16,7 @@ definePageMeta({
                                     <LayoutFullLogoDark />
                                 </div>
                                 <!-- <div class="text-h6 text-medium-emphasis text-center mb-6">Your Social Campaigns</div> -->
-                                <AuthLoginForm />
+                                <AuthLoginForm userType="Dosen"/>
                                 <h6 class="text-subtitle-1  text-grey100 d-flex justify-center align-center mt-3">
                                     New to Spike?
                                     <v-btn class="pl-0 text-primary text-body-1 font-weight-medium  opacity-1 pl-2" height="auto"

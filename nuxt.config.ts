@@ -15,6 +15,11 @@ export default defineNuxtConfig({
   nitro: {
     serveStatic: true,
   },
+  runtimeConfig: {
+    public: {
+      apiBase: 'http://localhost:3002', // Default untuk local development
+    },
+  },
   sourcemap: { server: false, client: false },
   devServerHandlers: [],
 });

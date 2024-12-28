@@ -12,7 +12,7 @@ const items = ref([
         <v-card-item class="pa-6">
             <div class="d-flex align-center justify-space-between">
                 <div>
-                    <h5 class="text-h5 mb-1 font-weight-semibold">Top Paying Clients</h5>
+                    <h5 class="text-h5 mb-1 font-weight-semibold">List Presensi Hari ini</h5>
                 </div>
                 <div>
                     <v-menu bottom left>
@@ -32,11 +32,12 @@ const items = ref([
         <v-table class="month-table">
             <thead>
                 <tr>
-                    <th class="text-subtitle-1 font-weight-bold">no</th>
-                    <th class="text-subtitle-1 font-weight-bold">Assigned</th>
-                    <th class="text-subtitle-1 font-weight-bold">Name</th>
-                    <th class="text-subtitle-1 font-weight-bold">Priority</th>
-                    <th class="text-subtitle-1 font-weight-bold text-right">Budget</th>
+                    <th class="text-subtitle-1 font-weight-bold">No</th>
+                    <th class="text-subtitle-1 font-weight-bold">Nama Mahasiswa</th>
+                    <th class="text-subtitle-1 font-weight-bold">Nim</th>
+                    <th class="text-subtitle-1 font-weight-bold">Kelas</th>
+                    <th class="text-subtitle-1 font-weight-bold text-right">Tanggal Masuk</th>
+                    <th class="text-subtitle-1 font-weight-bold text-right">Jam Masuk</th>
                 </tr>
             </thead>
             <tbody>

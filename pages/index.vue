@@ -4,8 +4,11 @@ import ProfitExpanse from "@/components/dashboards/ProfitExpense.vue";
 import TrafficDistribution from "@/components/dashboards/TrafficDistribution.vue";
 import ProductSales from "@/components/dashboards/ProductSales.vue";
 import UpcommingSchedule from "@/components/dashboards/UpcommingSchedule.vue";
-import TopPayingClients from "@/components/dashboards/TopPayingClients.vue";
+import StudentPresensiList from "@/components/dashboards/StudentPresensiList.vue";
 import ProductCards from "@/components/dashboards/ProductCards.vue";
+
+const isLogin = localStorage.getItem('isLogin')
+
 </script>
 
 <template>
@@ -25,7 +28,7 @@ import ProductCards from "@/components/dashboards/ProductCards.vue";
             <UpcommingSchedule/>
         </v-col>
         <v-col cols="12" sm="12" lg="8">
-            <TopPayingClients/>
+            <StudentPresensiList/>
         </v-col>
         <!-- <v-col cols="12" sm="12" lg="12">
             <ProductCards/>
